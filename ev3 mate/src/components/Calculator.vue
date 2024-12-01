@@ -1,5 +1,4 @@
 <template>
-  <h1>Numo</h1>
   <div class="calculator">
     <CalculatorDisplay :value="displayValue" />
     <div class="calculator-buttons">
@@ -57,6 +56,7 @@ const handleButtonPress = (label) => {
   flex-direction: column;
   align-items: center;
   margin: 2em;
+  background-color: black;
 }
 
 .calculator-buttons {

@@ -1,6 +1,6 @@
 <template>
   <div class="calculator-display">
-    {{ value }}
+    {{ value || 0 }}
   </div>
 </template>
 
@@ -17,10 +17,15 @@ const props = defineProps({
 
 <style scoped>
 .calculator-display {
-  background: #222;
+  background-color: gray;
   color: #fff;
   font-size: 2em;
   padding: 0.5em;
+  margin-bottom: 1em;
+
   text-align: right;
+  width: 100%;
+  border-radius: 10px;
+  
 }
 </style>
